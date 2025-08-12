@@ -205,7 +205,7 @@ export default function HaddangseSite() {
                   <h3 style={{ margin: 0, fontSize: 18, fontWeight: 800 }}>{p.name}</h3>
                   <p style={{ marginTop: 8, minHeight: 48, color: "#334155" }}>{p.desc}</p>
                   <div style={{ marginTop: 12, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                    <span style={{ fontWeight: 800 }}>{formatKRW(p.priceKRW as any)}</span>
+                   <span style={{ fontWeight: 800 }}>{formatKRW(p.priceKRW)}</span>
                     <a href={p.paymentLink} className="btn btn-primary">결제하기</a>
                   </div>
                 </div>
@@ -291,7 +291,7 @@ export default function HaddangseSite() {
 }
 
 // 공통 input 스타일
-const inputStyle: React.CSSProperties = {
+const inputStyle = {
   border: "1px solid #cbd5e1",
   borderRadius: 12,
   padding: "12px 14px",
